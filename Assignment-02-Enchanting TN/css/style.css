@@ -1,0 +1,94 @@
+
+*{
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+  header{
+    width: 100%;
+    background-color: rgb(61,22,60);
+  }
+  footer {
+    width: 100%;
+    background-color: rgb(112,32,83);
+  }
+  #title {
+    font-family: "Roboto Flex", sans-serif;
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+ 
+  }
+  #cover {
+    width: 100%;
+  }
+  #main-div {
+    margin: 100px;
+  }  
+ .column{
+    width: 33%;
+    display: inline-block;
+    padding: 10px;
+  }
+  .row2{
+       margin-top: 20px;
+  }
+  img {
+    width: 100%;
+  }
+  button {
+    background-color: #7a1655;
+    color: white;
+    padding: 10px;
+  }
+  
+  #main-div-p1{
+    text-align: center;
+    color: #7a1655;
+    font-size: 70px;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  .place-description{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 18pt;
+  }
+  .place-name{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+  .place-slogan{
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  #para-1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 30pt;
+    font-size: 25px;
+  }
+  .footer-widget {
+    width: 30%;
+    margin: 75px;
+    margin-bottom: 0;
+    color: white;
+    padding: 30px;
+  }
+  div.footer-widget p,
+  h4 {
+    margin: 0px;
+    padding: 0px;
+  }
