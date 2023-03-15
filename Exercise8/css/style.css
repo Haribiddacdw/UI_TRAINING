@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-image: url("/images/background-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.menu{
+    position: absolute;
+    background-color: black;
+    color: white;
+    top:5% ;
+    width: 5%;
+    height: 10%;
+    
+}
+i{
+    color: white;
+    padding: 26px 18px 44px;
+    font-size: 40px;
+}
+.menucontainer{
+    position: absolute;
+    transform: translate(-300px, -18px);
+    background-color: black;
+    top:14.2% ;
+    width: 16%;
+    height: 79%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: transform 2s;
+}
+
+.imagehat{
+    width: 35%;
+    margin-left: 30%;
+    margin-top: 19%;
+    margin-bottom: 14%;
+}
+.menu-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:22px;
+}
+.menu-items a{
+    color: white;
+    font-size: 20px;
+}
+.title{
+    position: absolute;
+    top: 5%;
+    left: 36.5%;
+    font-size: 74px;
+    color: white;
+    font-weight: 900;
+}
+
+.rotate{
+    position: absolute;
+    top: 19%;
+    right: -6%;
+    font-size: 120px;
+    color: white;
+    font-weight: 900;
+    align-items: center;
+    transform: rotate(270deg);
+}
+.bottomtext{
+    width: 60%;
+    position: absolute;
+    bottom: 3%;
+    left: 30%;
+    font-size: 110px;
+    color: white;
+    font-weight: 900;
+}
+.bottomicon{
+    position: absolute;
+    bottom: -2%;
+    right: 0%;
+    color: white;
+}
+.icon{
+    font-size: 40px;
+}
+
+ .menu:hover + .menucontainer{
+    transform: translate(0px, 0px);
+   
+}
+.menucontainer:hover{
+    transform: translate(0px, 0px);
+    transition: transform 3s;
+}
