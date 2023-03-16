@@ -18,22 +18,22 @@ body{
 }
 .menu{
     position: absolute;
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #fff;
     top:4.2% ;
     width: 5.3%;
     height: 10%;
 }
 
 i{
-    color: white;
+    color: #fff;
     padding: 26px 18px 44px 22px;
     font-size: 40px;
 }
 .menucontainer{
     position: absolute;
     transform: translate(-300px, -18px);
-    background-color: black;
+    background-color: #000;
     top:14.2% ;
     width: 16%;
     height: 79%;
@@ -54,7 +54,7 @@ i{
     gap:22px;
 }
 .menu-items a{
-    color: white;
+    color: #fff;
     font-size: 20px;
 }
 .title{
@@ -62,7 +62,7 @@ i{
     top: 5%;
     left: 40%;
     font-size: 74px;
-    color: white;
+    color: #fff;
     font-weight: 900;
     transform: translateX(-50px);
 }
@@ -72,7 +72,7 @@ i{
     top: 19%;
     right: -6%;
     font-size: 120px;
-    color: white;
+    color: #fff;
     font-weight: 900;
     align-items: center;
     transform: rotate(270deg);
@@ -86,7 +86,7 @@ i{
     bottom: 4%;
     left: 37%;
     font-size: 105px;
-    color: white;
+    color: #fff;
     font-weight: 900;
     transform: translateX(-50px);
 }
@@ -97,7 +97,7 @@ i{
     position: absolute;
     bottom: 2%;
     right: 2%;
-    color: white;
+    color: #fff;
 }
 .icon{
     font-size: 40px;
