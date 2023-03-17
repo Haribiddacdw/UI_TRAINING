@@ -32,8 +32,7 @@ figure{
     margin: 0;
   }
   #main-div {
-    margin: 88px;
-
+     margin: 81px 96px;
   }  
  .column{
     width: 33%;
@@ -58,8 +57,8 @@ figure{
   
   /*|| Cards Style */
   .place-slogan{
-    font-weight: 300;
-    font-size: 35px;
+    font-weight: 100;
+    font-size: 33px;
     margin-top: 15px;
     margin-bottom: 5px;
   }
