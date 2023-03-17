@@ -1,94 +1,122 @@
-
+/*|| Universal Style */
 *{
     box-sizing: border-box;
   }
 
+/*|| Body Style */
   body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
   }
+/*|| Header Style */  
   header{
     width: 100%;
     background-color: rgb(61,22,60);
   }
-  footer {
-    width: 100%;
-    background-color: rgb(112,32,83);
-  }
+
   #title {
-    font-family: "Roboto Flex", sans-serif;
+
     margin: 0;
     text-align: center;
-    padding: 30px;
+    padding: 50px;
     color: white;
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 44px;
+    font-weight: 700;
  
   }
   #cover {
     width: 100%;
   }
   #main-div {
-    margin: 100px;
+    margin: 88px;
+
   }  
  .column{
     width: 33%;
     display: inline-block;
-    padding: 10px;
+    padding: 14px;
   }
   .row2{
-       margin-top: 20px;
+    margin-top: 56px;
+    margin-bottom: 100px;
   }
   img {
     width: 100%;
   }
-  button {
+  .read-btn {
     background-color: #7a1655;
     color: white;
-    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 13px  24px;
+    border: 0;
   }
   
-  #main-div-p1{
-    text-align: center;
-    color: #7a1655;
-    font-size: 70px;
-    font-family: 'IBM Plex Sans', sans-serif;
-  }
-  .place-description{
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 35px;
-    font-size: 20px;
-    line-height: 18pt;
-  }
-  .place-name{
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 35px;
-  }
+  /*|| Cards Style */
   .place-slogan{
-
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
     font-size: 35px;
     margin-top: 15px;
     margin-bottom: 5px;
   }
+  .place-name{
+    font-weight: bold;
+    margin-top: 2%;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .place-description{
+    
+    font-weight: 300;
+    margin-bottom: 2px;
+    font-size: 20px;
+    line-height: 18pt;
+  }
 
+  #main-div-p1{
+    text-align: center;
+    color: #7a1655;
+    font-size: 70px;
+    font-weight: 300;
+    margin: 0%;
+
+  }
   #para-1 {
-    font-family: 'Roboto', sans-serif;
+    
     text-align: justify;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-bottom: 6%;
     line-height: 30pt;
-    font-size: 25px;
+    font-size: 28px;
+    font-weight: 200;
+  }
+
+  /*|| Footer Style */
+  footer {
+    width: 100%;
+    background-color: rgb(112,32,83);
+    
   }
   .footer-widget {
-    width: 30%;
-    margin: 75px;
-    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    margin-left: 6%;
     color: white;
-    padding: 30px;
+    padding-top: 33px ;
+    padding-bottom: 32px;
+    padding-left: 121;
   }
-  div.footer-widget p,
-  h4 {
+  div.footer-widget h4 {
     margin: 0px;
     padding: 0px;
+    margin-bottom: 2px;
+    
+  }
+ 
+  div.footer-widget p {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 100;
   }

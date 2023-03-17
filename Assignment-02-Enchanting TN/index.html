@@ -1,47 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UI | Exercise 2</title>
-    <!------------------------------------------------------------------ Links ------------------------------------------------------------------------>
+     <!-- LINK EXTERNAL ASSETS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;500&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <!------------------------------------------------------------------ Links END --------------------------------------------------------------------->
+    <!-- LINK LOCAL ASSETS  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <!------------------------------------------------------------------Body Start------------------------------------------------------------------------>
+  
   <body>
-    <!------------------------------------------------------------------Header start-------------------------------------------------------------------->
+   <!-- HEADER CONTENT STARTS  -->
     <header>
-      <div id="title">ENCHANTING TAMILNADU</div>
-      <!------------------------------------------------------------------Cover Image------------------------------------------------------------------->
+      <div id="title">ENCHANTING TAMIL NADU</div>
+      <!----Cover Image----->
       <div id="cover">
-        <img src="img/cover.png" width="100%" />
+        <img src="img/cover.png" alt="coverimage" width="100%" />
       </div>
     </header>
-    <!------------------------------------------------------------------Header End---------------------------------------------------------------------->
-
+    <!-- HEADER CONTENT ENDS -->
+     <!--  INFORMATION ABOUT TOURIST PLACES -->
     <section>
-      <!------------------------------------------------------------------ Card start------------------------------------------------------------------->
+
       <div id="main-div">
-        <!------------------------------------------------------------------ Row 1---------------------------------------------------------------------->
+        <article>
         <div id="row1">
+          <!-- CITY NAME AND ITS DESCRIPTION CONTAINER -->
           <div class="column">
-            <img src="img/pollachi.png" width="100%" />
+            <img src="img/pollachi.png" alt="pollachi" width="100%" />
             <h3 class="place-slogan">
               Never Ending Paddy Fields and Narrow Roads
             </h3>
@@ -54,10 +45,11 @@
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
-            <button>READ MORE</button>
+            <button class="read-btn">READ MORE</button>
           </div>
+            <!-- CITY NAME AND ITS DESCRIPTION CONTAINER -->
           <div class="column">
-            <img src="img/thanjavur.png" width="100%" />
+            <img src="img/thanjavur.png" alt="thanjavur" width="100%" />
             <h3 class="place-slogan">
               Small Ride across town in mid summer heat
             </h3>
@@ -70,10 +62,11 @@
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
-            <button>READ MORE</button>
+            <button class="read-btn">READ MORE</button>
           </div>
+            <!-- CITY NAME AND ITS DESCRIPTION CONTAINER -->
           <div class="column">
-            <img src="img/chidambaram.png" />
+            <img src="img/chidambaram.png" alt="chidambaram" />
             <h3 class="place-slogan">
               Catching a Short Break at the Lotus Pond
             </h3>
@@ -86,14 +79,15 @@
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
-            <button>READ MORE</button>
+            <button class="read-btn">READ MORE</button>
           </div>
         </div>
-        <!------------------------------------------------------------------ Row 1 End------------------------------------------------------------------------->
-        <!------------------------------------------------------------------ Row 2 ------------------------------------------------------------------------->
+      </article>
+      <article>
         <div class="row2">
+            <!-- CITY NAME AND ITS DESCRIPTION CONTAINER -->
           <div class="column">
-            <img src="img/masangudi.png" />
+            <img src="img/masangudi.png" alt="masangudi"/>
             <h3 class="place-slogan">
               Road Trip enroute the mountains and forests
             </h3>
@@ -106,10 +100,11 @@
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
-            <button>READ MORE</button>
+            <button class="read-btn">READ MORE</button>
           </div>
+            <!-- CITY NAME AND ITS DESCRIPTION CONTAINER -->
           <div class="column">
-            <img src="img/kumbakonam.png" />
+            <img src="img/kumbakonam.png" alt="kumbakonam"/>
             <h3 class="place-slogan">
               Fall in Love with the divine agraharams
             </h3>
@@ -122,10 +117,11 @@
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
-            <button>READ MORE</button>
+            <button class="read-btn">READ MORE</button>
           </div>
+            <!-- CITY NAME AND ITS DESCRIPTION CONTAINER -->
           <div class="column">
-            <img src="img/tirunelveli.png" />
+            <img src="img/tirunelveli.png" alt="tirunelveli"/>
             <h3 class="place-slogan">
               Energy driven drive through the windmills
             </h3>
@@ -138,10 +134,13 @@
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
-            <button>READ MORE</button>
+            <button class="read-btn">READ MORE</button>
           </div>
         </div>
+      </article>
       </div>
+        <!-- TAG-LINE -->
+      <article>
       <div class="main-div2">
         <p id="main-div-p1">Many Wonders, One Emotion</p>
         <div id="para-1">
@@ -157,18 +156,17 @@
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <!------------------------------------------------------------------ Row 2 End ---------------------------------------------------------------------->
       </div>
-      <!------------------------------------------------------------------Card start------------------------------------------------------------------------->
+    </article>
     </section>
-    <!------------------------------------------------------------------Footer start------------------------------------------------------------------------->
+    <!-- FOOTER SECTION STARTS  -->
     <footer>
       <div class="footer-widget">
         <h4>COPYRIGHTS 2020</h4>
         <p>All Photos From Dribble Collections</p>
       </div>
     </footer>
-    <!------------------------------------------------------------------Footer End------------------------------------------------------------------------->
+    <!-------- FOOTER SECTION ENDS  ----------->
   </body>
-  <!------------------------------------------------------------------Body Section End ------------------------------------------------------------------------>
+  <!-------BODY SECTION END------>
 </html>
