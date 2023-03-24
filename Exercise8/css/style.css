@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    background-image: url("../images/background-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bgimage::before{
+     content: "";
+     position: absolute;
+     inset: 0px;
+     background-color: rgba(0,0,0,0.25);
+}
+.menu{
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    top:4.2% ;
+    width: 5.3%;
+    height: 10%;
+}
+
+i{
+    color: #fff;
+    padding: 26px 18px 44px 22px;
+    font-size: 40px;
+}
+.menucontainer{
+    position: absolute;
+    transform: translate(-300px, -18px);
+    background-color: #000;
+    top:14.2% ;
+    width: 16%;
+    height: 79%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: transform 2s;
+}
+
+.imagehat{
+    width: 35%;
+    margin: 19% 0% 14% 30%;
+}
+
+.menu-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:22px;
+}
+.menu-items a{
+    color: #fff;
+    font-size: 20px;
+}
+.title{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-size: 74px;
+    color: #fff;
+    font-weight: 900;
+    transform: translate(-50%, -50%);
+}
+
+.launch-year{
+    position: absolute;
+    top: 19%;
+    right: -6%;
+    font-size: 120px;
+    color: #fff;
+    font-weight: 900;
+    align-items: center;
+    transform: rotate(270deg);
+}
+.small-text{
+    font-size: 40px;
+}
+.tag-line{
+    width: 50%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 105px;
+    color: #fff;
+    font-weight: 900;
+    transform: translate(-50%, -50%);
+}
+.big-text{
+    font-size: 139px;
+}
+.socialmediaicon{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    color: #fff;
+}
+.icon{
+    font-size: 40px;
+    padding: 0%;
+    margin-left: 18px;
+}
+
+ .menu:hover + .menucontainer{
+    transform: translate(0px, 0px);
+   
+}
+.menucontainer:hover{
+    transform: translate(0px, 0px);
+    transition: transform 3s;
+}
