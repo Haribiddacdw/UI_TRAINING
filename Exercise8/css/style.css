@@ -59,12 +59,12 @@ i{
 }
 .title{
     position: absolute;
-    top: 5%;
-    left: 40%;
+    top: 10%;
+    left: 50%;
     font-size: 74px;
     color: #fff;
     font-weight: 900;
-    transform: translateX(-50px);
+    transform: translate(-50%, -50%);
 }
 
 .launch-year{
@@ -81,14 +81,14 @@ i{
     font-size: 40px;
 }
 .tag-line{
-    width: 60%;
+    width: 50%;
     position: absolute;
-    bottom: 4%;
-    left: 37%;
+    top: 80%;
+    left: 60%;
     font-size: 105px;
     color: #fff;
     font-weight: 900;
-    transform: translateX(-50px);
+    transform: translate(-50%, -50%);
 }
 .big-text{
     font-size: 139px;
