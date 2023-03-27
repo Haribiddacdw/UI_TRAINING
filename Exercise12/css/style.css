@@ -1,0 +1,195 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+.Title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #a9e087;
+  padding: 23px 26px 23px 26px;
+}
+.shapeselection {
+  margin: 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 86px;
+  align-items: center;
+  color: #fff;
+}
+.text1 {
+  font-size: 52px;
+}
+.shapes {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.tick {
+  text-align: center;
+  padding: 35px;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+.ticon {
+  padding: 60px 0px;
+}
+
+.circle {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 158px;
+  height: 158px;
+  background: #00987d;
+  border: 1px solid #000;
+}
+.triangle {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 150px solid #ffabdc;
+}
+.square {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 151px;
+  width: 151px;
+  background-color: #e0e0e0;
+}
+
+.button {
+  padding: 13px 75px;
+  border: 2px solid white;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  background-color: #000;
+  visibility: hidden;
+  border-radius: 3px;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+/* *******************section 2************** */
+
+.inputcontainersection {
+  margin: 18%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  color: #fff;
+}
+
+.inputdescription {
+  font-size: 45px;
+}
+.calculatebutton {
+  padding: 15px 50px;
+  border: 2px solid white;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #000;
+  border-radius: 3px;
+}
+
+.inputbox {
+  width: 65%;
+  padding: 25px 35px;
+  border: 2px solid white;
+  font-weight: 500;
+  background-color: #000;
+  color: white;
+  font-size: 36px;
+  
+}
+
+/* *******************section 3************** */
+
+.tablearea {
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+.shapes-description {
+  font-size: 52px;
+  color: #fff;
+}
+.startagain {
+  width: 30%;
+  padding: 20px 100px;
+  border: 1px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.result-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 30px;
+  color: #fff;
+  font-size: 15px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  padding: 0px 9px;
+}
+.column1 {
+  background-color: #0D62D6;
+
+  padding: 10px;
+  font-weight: 300;
+  width: 200px;
+}
+.column2 {
+  background-color: #455d7e;
+  width: 130px;
+
+  padding: 8px;
+  font-weight: 300;
+}
+#sideFormula {
+  padding: 0px 10px 0px 15px;
+}
+.column3 {
+  width: 150px;
+  background-color: #0D62D6;
+  padding: 6px;
+
+  font-weight: 300;
+}
+.startagainbutton {
+  margin-top: 45px;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+  background-color: #000;
+}
