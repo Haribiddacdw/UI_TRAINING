@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head section -->
+<head>
+     <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- External Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <!-- Sirius Logo -->
+<div class="sirius-img">
+</div>
+       <!-- Form Section -->
+       <section class="form-container">
+        <p class="billing">BILLING DETAILS</p>
+         <form action="" name="myform" onsubmit="event.preventDefault(); myFunction()" novalidate class="form">
+            <div class="namefield">
+                <div class="firstname">
+                    <label for="firstname" class="label">First Name</label>
+                    <input type="text" id="firstname" name="firstname" class="form-input">
+                    <p class="error"></p>
+                </div>
+                <div class="Lastname">
+                    <label for="lastname" class="label">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" class="form-input">
+                    <p class="error"></p>
+                </div>
+            </div>
+            <div class="email">
+                <label for="email" class="label">Email Address</label>
+                <input type="email" id="email" name="email"  class="form-input">
+                <p class="error"></p>
+            </div>
+            <div class="contact-number">
+                <label for="contactnumber" class="label">Contact Number</label>
+                <input type="number" id="contactnumber" name="contactnumber"  class="form-input">
+                <p class="error"></p>
+            </div>
+            <div class="pincode">
+                <label for="pincode" class="label">PIN code</label>
+                <input type="number" id="pincode" name="pincode"  class="form-input">
+                <p class="error"></p>
+            </div>
+            <p class="payment">PAYMENT DETAILS</p>
+            <div class="cardnumber">
+                <label for="cardnumber" class="label">Card Number</label>
+                <input type="number" id="cardnumber" name="cardnumber"  class="form-input">
+                <p class="error"></p>
+            </div>
+            <div class="card-exp">
+                <div class="cardexpyear">
+                    <label for="cardexpyear" class="label">Card Expiry(Year)</label>
+                    <input type="number" id="cardexpyear" name="cardexpyear"  class="form-input">
+                    <p class="error"></p>
+                </div>
+                <div class="cvv">
+                    <label for="cvv" class="label">CVV</label>
+                    <input type="number" id="cvv" name="cvv"  class="form-input">
+                    <p class="error"></p>
+                </div>
+            </div>
+            <button class="form-btn" type="submit">COMPLETE PAYMENT</button>
+            <p id="form-message"></p>
+        </form>
+         <!-- Form Section End-->
+       </section>
+       <!-- Js Link -->
+       <script src="/js/index.js"></script>
+</body>
+</html>
