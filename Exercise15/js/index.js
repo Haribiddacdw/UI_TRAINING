@@ -23,6 +23,21 @@ fetch("store/posters.json")
     document.getElementById("upcoming-movies").append(output);
   });
 
+
+
+function playVid() { 
+  document.getElementById("video").play(); 
+  document.getElementById("video").setAttribute("controls",""); 
+  let x =document.getElementById("play-icon"); 
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
 /**
  * It will createComment Container
  * @returns Div object
@@ -40,8 +55,10 @@ function createComment(temp) {
   let divcarddetails = document.createElement("div");
   divcarddetails.className = "card-details";
   let subdiv1carddetails = document.createElement("div");
+  subdiv1carddetails.className="commenter-name";
   subdiv1carddetails.textContent = temp.name;
   let subdiv2carddetails = document.createElement("div");
+  subdiv2carddetails.className="comment";
   subdiv2carddetails.textContent = temp.comment;
   divcarddetails.appendChild(subdiv1carddetails);
   divcarddetails.appendChild(subdiv2carddetails);
@@ -70,12 +87,11 @@ function createVideoElement(data) {
   let videoDiv = document.createElement("video");
   videoDiv.id = "video";
   videoDiv.setAttribute("width", "100%");
-  videoDiv.setAttribute("controls", "");
+  videoDiv.setAttribute("poster", "https://www.slashcam.de/images/news/sprite_fright1-16857_PIC1.jpg");
   let sourceDiv = document.createElement("source");
   sourceDiv.src = data.videoUrl;
   sourceDiv.type = "video/mp4";
   videoDiv.appendChild(sourceDiv);
-  console.log(videoDiv);
   document.getElementById("video-div").appendChild(videoDiv);
 }
 /**
