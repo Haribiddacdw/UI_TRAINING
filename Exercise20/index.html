@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+     <!-- LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <!-- BODY -->
+  <body onload="onLoad()">
+     <!-- HEADER -->
+    <header class="header">
+      <p class="page-title">Pocket Notes</p>
+      <div>
+        <button
+          class="button button-D"
+          onclick="openDeleteBox()"
+          id="deleteButton"
+        >
+          DELETE ALL
+        </button>
+        <button class="button button-N" onclick="getForm()">NEW</button>
+      </div>
+      <!-- FORM -->
+      <div class="formcontainer" id="formcontainer">
+        <div class="form-items">
+          <div class="close-button">
+            <p class="form-des">NEW NOTE</p>
+            <i class="fa-regular fa-x" onclick="hideForm()"></i>
+          </div>
+          <div class="forms">
+            <form class="form" id="myform" onsubmit="event.preventDefault();">
+              <div class="input-box">
+                <div id="title-error" class="error-message"></div>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  value=""
+                  class="note-title input-values"
+                  placeholder="Notes Title"
+                />
+                </div>
+                <div>
+                  <div id="imageURL-error"" class="error-message"></div>
+                <input type="text" id="image" name="imageUrl" class="image input-values" placeholder="Add an Image Url">
+                </div>
+                 <div>
+                <textarea class="textcontent input-values" name="textContent" id="textcontent" placeholder="Add Content Here"></textarea>
+              </div>
+              <div class="form-end">
+                <div class="choose-color" id="choose-color">
+                  <div class="color color1" id="color1">
+                    <i class="fa-solid fa-check tick" id="pinkSelector"></i>
+                  </div>
+                  <div class="color color2" id="color2">
+                    <i class="fa-solid fa-check tick" id="whiteSelector"></i>
+                  </div>
+                  <div class="color color3" id="color3">
+                    <i class="fa-solid fa-check tick" id="yellowSelector"></i>
+                  </div>
+                  <div class="color color4" id="color4">
+                    <i class="fa-solid fa-check tick" id="greenSelector"></i>
+                  </div>
+                  <div class="color color5" id="color5">
+                    <i class="fa-solid fa-check tick" id="peachSelector"></i>
+                  </div>
+                </div>
+                <button class="button-ADD" onclick="submitCard(this.form); document.location.reload(true)" id="addButton" disabled>
+                  ADD
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- CARDS SECTION-->
+    <section>
+      <div class="cards-container" id="cards-container"></div>
+    </section>
+
+     <!-- DELETE BOX CONTAINER-->
+    <div class="deleteAllBox" id="deleteAllBox">
+      <div class="deleteAll" id="deleteAll">
+        <div class="close-box">
+          <p class="form-des">CONFIRM DELETE</p>
+          <i class="fa-regular fa-x" onclick="closeDeleteBox()"></i>
+        </div>
+        <div class="confrim">
+          <p class="confirm-message">Are you Sure Want to delete all notes ?</p>
+          <button class="button-DeleteAll" onclick="deleteAllNotes()">
+            YES,DELETE
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- LOAD ICON -->
+    <div class="onLoadElement" id="onLoadElement">
+      <img src="./images/cube.png" alt="cube" width="80%" />
+      <p>Notes you add appear here</p>
+    </div>
+  
+    <button class="button-LM" id="loadMoreButton">LOAD MORE</button>
+    <!-- JS LINKS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

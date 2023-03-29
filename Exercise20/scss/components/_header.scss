@@ -1,0 +1,204 @@
+//style for header
+.header {
+  @include flexCentre;
+  flex-direction: row;
+  background-color: $header-background;
+  justify-content: space-between;
+  padding: 29px 35px;
+  .page-title {
+    color: #ffffff;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+  }
+}
+//style for buttons
+.button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  .button:hover {
+    background-color: #f1f1f1;
+  }
+}
+.button-D {
+  background-color: #a80000;
+  color: #ffffff;
+  border-radius: 25px;
+  border: None;
+  font-size: 18px;
+  padding: 10px 35px;
+  margin: 5px;
+  cursor: pointer;
+}
+.button-N {
+  background-color: #b355b7;
+    color: #ffffff;
+    border-radius: 25px;
+    border: None;
+    font-size: 18px;
+    padding: 10px 35px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+//style for forms
+.formcontainer {
+  position: absolute;
+  display: none;
+  background-color: rgb(0, 0, 0);
+  top: 0%;
+  right: 0%;
+  z-index: 1;
+}
+.form-items{
+  display: flex;
+    flex-direction: column;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    padding: 45px;
+    background-color: #000000;
+    transition: 0.5s ease-in-out;
+}
+.form-des {
+  font-size: 25px;
+  color: $header-font-color;
+}
+.close-button {
+  display: flex;
+  justify-content: space-between;
+   flex-grow: 0;
+    background: #041d2e;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 15px 20px;
+    margin-top: 10px;
+  i {
+    padding: 3px;
+    cursor: pointer;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  
+  input {
+    border: none;
+    background-color: rgb(0, 0, 0);
+  }
+  .note-title {
+    width: 100%;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.5;
+    outline: none;
+    padding: 5px;
+  }
+  .image{
+    width: 100%;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    outline: none;
+    padding: 5px;
+  }
+  .textcontent {
+    display: inline-block;
+    width: 100%;
+    padding: 1px;
+    font-size: 30px;
+    color: #FFFF;
+    background-color: #000000;
+    border: 1px solid #000000;
+    resize: none;
+    height: 500px;
+    margin-bottom: 10%;
+  }
+}
+
+.form-submit {
+  display: flex;
+  flex-direction: row;
+}
+.form-end{
+    position: absolute;
+    bottom: 2%;
+    left: 15%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+   
+}
+
+
+//style for cards color
+.choose-color {
+  display: flex;
+  flex-direction: row;
+  gap:15px;
+  .color {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    i{
+      display: none;
+    }
+  }
+  .color1 {
+    background-color: map-get($card-colors, "card-color-1");
+    
+  }
+  .color2 {
+    background-color: map-get($card-colors, "card-color-2");
+  }
+  .color3 {
+    background-color: map-get($card-colors, "card-color-3");
+  }
+  .color4 {
+    background-color: map-get($card-colors, "card-color-4");
+  }
+  .color5 {
+    background-color: map-get($card-colors, "card-color-5");
+  }
+  
+}
+.fa-solid
+{
+  position: relative;
+  font-size: 25px;
+  top: 25%;
+  left: 20%;
+  transform: translateY(-50%);
+  color: black;
+}
+.error-message{
+  color: white;
+}
+.button-ADD{
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+  background-color: $button-LM-color;
+}

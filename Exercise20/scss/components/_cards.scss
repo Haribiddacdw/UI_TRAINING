@@ -1,0 +1,137 @@
+section {
+  width: 100%;
+}
+//style for cards
+.cards-container {
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 2%auto;
+
+  .cardLink {
+    text-decoration: none;
+    border-radius: 5px;
+    width: 310px;
+    margin: 20px;
+    padding: 25px;
+    overflow: hidden;
+    cursor: pointer;
+    .card{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    a {
+      text-decoration: none;
+    }
+    .notes-title {
+      font-size: 28px;
+      color: black;
+    }
+    .notes-date {
+ 
+      color: black;
+    }
+    .image-container {
+      width: 100%;
+      border-radius: 2%;
+      img {
+        border-radius: 10px;
+        width: 100%;
+        max-height: 100%;
+      }
+    }
+    .card-content {
+      margin-top: 20px;
+      line-height: 1.5;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: black;
+    }
+  }
+}
+.button-LM {
+  position: absolute;
+  display: none;
+  margin-top: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 16px;
+  background-color: $button-LM-color;
+}
+
+.deleteAllBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 999999;
+  position: fixed;
+  display: none;
+  width: 35%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 15px 20px 15px;
+  background-color: #000000;
+}
+.deleteAll{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 3%;
+}
+.close-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(10, 28, 45);
+  padding: 8px;
+    i{
+        cursor: pointer;
+    }
+}
+.confrim{
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+}
+.confirm-message{
+        color:white;
+        padding: 15px;
+    }
+.button-DeleteAll {
+  background-color: #b355b7;
+  color: #ffffff;
+  border-radius: 25px;
+  border: None;
+  font-size: 18px;
+  padding: 10px 35px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+//style for on load element
+.onLoadElement{
+    position: absolute;
+    background-color: black;
+    top: 40%;
+    left: 50%;
+    align-items: center;
+    display: block;
+    transform: translate(-50%, -50%);
+    p{
+      margin-top: 4%;
+      color: white;
+      font-size: 30px;
+      color: rgb(178, 178, 178);
+    }
+}

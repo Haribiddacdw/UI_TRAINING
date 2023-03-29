@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <!-- BODY -->
+  <body onload="getNote()">
+     <!-- HEADER -->
+    <header class="header">
+        <div class="page-title">
+            <a href="./index.html"><i class="fa-solid fa-arrow-left arrow"></i></a>
+            <p>Pocket Notes</p>
+        </div> 
+      <div>
+        <button class="button button-D" onclick="openDeleteNote()">DELETE</button>
+        <button class="button button-N"  onclick="editForm()">EDIT</button>
+      </div>
+       <!-- FORM -->
+      <div class="formcontainer" id="formcontainer">
+        <div class="form-items">
+             <div class="close-button">
+               <p class="form-des">EDIT NOTE</p>  
+               <i class="fa-regular fa-x" onclick="hideForm()"></i>
+            </div>
+            <div class="forms">
+              <form class="form" id="myform">
+                <div class="input-box">
+                  <input
+                    type="text"
+                    id="title1"
+                    name="title"
+                    value=""
+                    class="note-title input-values"
+                    placeholder="Notes Title"
+                  />
+                  <span class="error" id="nameError"></span>
+                  <input type="text" id="image1" name="imageUrl"  class="image input-values" placeholder="Add an Image Url">
+                  <span class="error" id="imageError"></span><br>
+                  <textarea class="textcontent input-values" name="textContent" id="textcontent1" placeholder="Add Content Here"></textarea>
+                  <span class="error" id="contentError"></span>
+                </div>
+                <div class="form-end">
+                  <div class="choose-color" id="choose-color">
+                    <div class="color color1" id="color1">
+                      <i class="fa-solid fa-check tick" id="pinkSelector"></i>
+                    </div>
+                    <div class="color color2" id="color2">
+                      <i class="fa-solid fa-check tick" id="whiteSelector"></i>
+                    </div>
+                    <div class="color color3" id="color3">
+                      <i class="fa-solid fa-check tick" id="yellowSelector"></i>
+                    </div>
+                    <div class="color color4" id="color4">
+                      <i class="fa-solid fa-check tick" id="greenSelector"></i>
+                    </div>
+                    <div class="color color5" id="color5">
+                      <i class="fa-solid fa-check tick" id="peachSelector"></i>
+                    </div>
+                  </div>
+                  <button class="button-ADD" onclick="event.preventDefault(); submitCard2(this.form);" id="save-button">
+                    SAVE
+                  </button>
+                </div>
+              </form>
+            </div>
+        </div>
+     </div>
+    </header>
+     <!-- CARDS SECTION-->
+    <section>
+      <div class="full-content" id="full-content">
+
+        <div class="theme-icon"></div>
+        <div class="fulldetail-section">
+          <h2 class="fulldetail-notes-title" id="note-title"></h2>
+          <p class="fulldetail-notes-date" id="note-date"></p>
+          <div class="fulldetail-image-container">
+            <img src="" alt="image" width="100%" id="note-image"/>
+          </div>
+          <p class="fulldetail-card-content" id="note-description"></p>
+        </div>
+      </div>
+    </section>
+  <!-- DELETE BOX CONTAINER-->
+    <div class="deleteAllBox" id="deleteAllBox">
+      <div class="deleteAll" id="deleteAll">
+               <div class="close-box">
+                 <p class="form-des">CONFIRM DELETE</p>  
+                 <i class="fa-regular fa-x" onclick="closeDeleteBox()"></i>
+              </div>
+              <div class="confrim">
+                  <p class="confirm-message">Are you Sure Want to delete a note ? </p>
+                  <button class="button-DeleteAll" onclick="deleteNotes()">YES,DELETE</button>
+              </div> 
+       </div>
+  </div>
+
+ <!-- JS LINKS -->
+ <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="./js/notesDetail.js"></script>
+  </body>
+</html>
