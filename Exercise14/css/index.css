@@ -21,14 +21,14 @@ body {
   padding-bottom: 25px;
   color: rgb(7, 27, 109);
   font-size: 19px;
-  font-weight:600;
+  font-weight: 600;
 }
-.payment{
+.payment {
   margin: 0%;
   padding-top: 20px;
   color: rgb(7, 27, 109);
   font-size: 19px;
-  font-weight:600;
+  font-weight: 600;
 }
 /* Form Style */
 .form {
@@ -75,7 +75,6 @@ body {
   flex-direction: column;
   gap: 3px;
 }
-
 .label {
   font-size: 10px;
   font-weight: 700;
@@ -88,10 +87,10 @@ body {
   color: #3d3935;
   outline: 0;
 }
-.input-box{
+.input-box {
   border-color: rgb(154, 30, 20);
 }
-.error{
+.error {
   font-size: 12px;
   color: rgb(154, 30, 20);
 }

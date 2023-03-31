@@ -69,7 +69,7 @@ function isRequired(input){
 }
 /**
  * It will display the error message to the user
- * @returns a boolean value.
+ * @returns null
  */
 function errorMessage(input,message){
    let id = input.getAttribute("id");
@@ -79,7 +79,7 @@ function errorMessage(input,message){
 }
 /**
  * It will remove all error message
- * @returns a boolean value.
+ * @returns null
  */
 function clearErrorMessage(inputAll){
   inputAll.forEach((element) => {
