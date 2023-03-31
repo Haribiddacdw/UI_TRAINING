@@ -1,29 +1,26 @@
-/* Fetching video json data */
-(function () {
+$( document ).ready(function() {
   const videoAPI = "https://mocki.io/v1/4da47fc5-bbf3-4e41-b35f-c88a584bc4b0";
   $.getJSON(videoAPI, { format: "json" }).done(function (data) {
     createVideoElement(data);
     createMovieNameElement(data);
     createMovieDescriptionElement(data);
-    let empty = $("<div>");
+    let documentFragment = $(document.createDocumentFragment());
     for (let temp in data.comments) {
-      empty.append(createComment(data.comments[temp]));
+      documentFragment.append(createComment(data.comments[temp]));
     }
-    $("#comments").append(empty);
+    $("#comments").append(documentFragment);
   });
-})();
 
-/* Fetching poster json data */
-(function () {
   const posterAPI = "https://mocki.io/v1/8c9b378b-d248-4203-93b0-b8e7659ac346";
   $.getJSON(posterAPI, { format: "json" }).done(function (data) {
-    let output = $("<div>");
+    let documentFragment = $(document.createDocumentFragment());
     for (let temp in data) {
-      output.append(createImageCards(data[temp]));
+      documentFragment.append(createImageCards(data[temp]));
     }
-    $("#upcoming-movies").append(output);
+    $("#upcoming-movies").append(documentFragment);
   });
-})();
+});
+
 
 /** It will createComment Container
  * @returns Div object
@@ -40,8 +37,10 @@ function createComment(temp) {
   let divcarddetails = $("<div>");
   divcarddetails.attr("class", "card-details");
   let subdiv1carddetails = $("<div>");
+  subdiv1carddetails.attr("class", "commenter-name");
   subdiv1carddetails.html(temp.name);
   let subdiv2carddetails = $("<div>");
+  subdiv2carddetails.attr("class", "comment");
   subdiv2carddetails.html(temp.comment);
   divcarddetails.append(subdiv1carddetails);
   divcarddetails.append(subdiv2carddetails);
@@ -50,6 +49,19 @@ function createComment(temp) {
 
   return div;
 }
+
+function playVid() { 
+  console.log("hii");
+  document.getElementById("video").play(); 
+  document.getElementById("video").setAttribute("controls",""); 
+  let x =document.getElementById("play"); 
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 /**
  * It will create Image Container
  * @returns Div object
@@ -72,8 +84,8 @@ function createVideoElement(data) {
   let videoDiv = $("<video>");
   videoDiv.attr("id", "video");
   videoDiv.attr("width", "100%");
-  videoDiv.attr("poster", "https://www.slashcam.de/images/news/sprite_fright1-16857_PIC1.jpg");
   videoDiv.attr("controls", "");
+  videoDiv.attr("poster", "https://www.slashcam.de/images/news/sprite_fright1-16857_PIC1.jpg");
 
   let sourceDiv = $("<source>");
   sourceDiv.attr("src", data.videoUrl);
