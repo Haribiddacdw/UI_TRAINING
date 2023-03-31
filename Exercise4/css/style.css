@@ -1,60 +1,61 @@
 /*|| Body */
 body {
-  margin: 0;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
   font-family: "Roboto ", sans-serif;
 }
 
 /*|| Header */
 header {
-  width: 100%;
-  padding: 13px;
+  padding: 14px;
   background-color: rgb(45, 94, 144);
 }
 /*|| Header Title */
 #title {
-  margin: 0;
   text-align: center;
-  padding: 18px;
+  padding: 20px;
   color: white;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
 }
 /*|| Main Container */
 .main {
-  max-width: 84.3%;
-  margin: 0 auto 38px;
+  max-width: 83%;
+  margin: 2.2% auto;
 }
 /*|| Left Container */
 .left {
   float: left;
-  width: 61.5%;
+  width: 61%;
+  
 }
 
 /*|| Left Container */
 .right {
-  float: left;
-  width: 38.5%;
+  float: right;
+  width: 37.5%;
+}
+.clearfix{
+  clear: both;
 }
 
-/*|| Container Head */
-h2 {
- 
-  margin: 0;
-}
-
-.newschannel{
+.newschannel {
   border: 1px solid rgb(45, 94, 144);
-  margin: 10px 19px 19px;
+  margin-bottom: 2.5%;
 }
 .channelname {
   background-color: rgb(45, 94, 144);
-  padding: 10px 5px 10px 20px;
+  padding: 16px 26px;
+  font-size: 20px;
+  font-weight: 700;
   color: white;
+  margin: 0%;
 }
 .channeldescription {
   font-size: 18px;
   line-height: 1.5;
-  padding: 18px;
+  padding: 21px 25px;
   margin: 0%;
   text-align: justify;
   background-color: rgb(246, 246, 246);
