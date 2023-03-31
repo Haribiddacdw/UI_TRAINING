@@ -1,0 +1,52 @@
+//style for fulldetail page
+.page-title{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    .arrow{
+        color: white;
+        font-size: 40px;
+        padding-top:10px ;
+    }
+}
+.full-content{
+     width: 60%;
+     margin: 2%auto;
+     display: flex;
+     gap: 10px;
+     flex-direction: row;
+     flex-grow: inherit;
+     .theme-icon{
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+     }
+     .fulldetail-section{
+           display: flex;
+           flex-direction: column;
+           gap: 20px;
+           .fulldetail-notes-title{
+            font-size: 30px;
+            color: white;
+           }
+        .fulldetail-notes-date{
+            font-size: 15px;
+            color: white;
+        }
+        .fulldetail-image-container{
+            width: 100%;
+           
+            img{
+                width: 90%;
+                height: 90%;
+                border-radius: 3%; 
+            }
+        }
+        .fulldetail-card-content{
+            margin-top: -3%;
+           font-size: 15px;
+           color: white;
+        }
+     }
+}

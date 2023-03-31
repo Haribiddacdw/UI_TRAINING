@@ -1,0 +1,12 @@
+//universal selector
+*{
+    margin: 0;
+    padding: 0;
+}
+//style for body
+body{ 
+    font-family: $font-family-1;
+    background-color: $body_background_color;
+    box-sizing: border-box;
+    
+}
