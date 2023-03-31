@@ -1,9 +1,10 @@
-.brandiconcontainer {
+//style for brand icon container
+.brand-icon-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 11% 12% 11% 12%;
-  .brandicon {
+  .brand-icon {
     width: 10%;
   }
 }

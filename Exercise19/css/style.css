@@ -11,14 +11,14 @@ img {
   display: flex;
   flex-direction: column;
 }
-.title .emailIcon {
+.title .email-Icon {
   display: flex;
   align-self: end;
   margin-top: 2%;
   margin-bottom: 6%;
   margin-right: 10%;
 }
-.title .emailIcon p {
+.title .email-Icon p {
   color: #FFF;
   font-size: 28px;
   font-weight: 600;
@@ -27,16 +27,17 @@ img {
 .name p {
   color: #FFF;
   font-size: 167px;
-  font-weight: 500;
   text-align: center;
   margin: 0%;
 }
 .name p:nth-child(2) {
   color: #FFF;
   font-size: 60px;
-  font-weight: 500;
   text-align: center;
-  margin: 2% 0% 2%;
+  margin: 0% 0% 8%;
+}
+.name .first-name {
+  font-weight: 400;
 }
 .name .bold-text {
   font-weight: 700;
@@ -59,13 +60,13 @@ img {
   width: 100%;
 }
 
-.brandiconcontainer {
+.brand-icon-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 11% 12% 11% 12%;
 }
-.brandiconcontainer .brandicon {
+.brand-icon-container .brand-icon {
   width: 10%;
 }
 
@@ -74,6 +75,7 @@ img {
   font-size: 53px;
   font-weight: 500;
   text-align: center;
+  margin-top: 8%;
   margin-bottom: 5.5%;
 }
 .showoff .showoff-text {
@@ -116,8 +118,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 22px;
-  padding: 15px 14px 14px 15px;
+  font-size: 28px;
+  padding: 12px 14px 14px 12px;
 }
 
 .Quote {
@@ -139,28 +141,31 @@ img {
   .title {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 35%;
+    margin-top: 40%;
+  }
+  .title .email-Icon {
+    margin: 0% 27% 0% 0%;
   }
   .name p {
     color: #FFF;
-    font-size: 60px;
+    font-size: 75px;
     font-weight: 500;
     text-align: center;
     margin: 0%;
   }
   .name p:nth-child(2) {
     color: #FFF;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 500;
     text-align: center;
-    margin: 0%;
+    margin: 7% 0% 0% 0%;
   }
-  .emailIcon {
+  .email-Icon {
     display: flex;
     justify-content: center;
-    margin-left: 5%;
+    margin: auto;
   }
-  .emailIcon p {
+  .email-Icon p {
     color: #FFF;
     font-size: 18px;
     font-weight: 500;
@@ -180,7 +185,7 @@ img {
     text-align: center;
     margin-bottom: 7%;
   }
-  .brandiconcontainer {
+  .brand-icon-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -188,19 +193,19 @@ img {
     justify-content: space-around;
     margin-bottom: 180px;
   }
-  .brandiconcontainer > div {
+  .brand-icon-container > div {
     display: flex;
     flex-basis: 100px;
     flex-grow: 0;
     justify-content: center;
     flex-direction: column;
   }
-  .brandiconcontainer > div > img {
+  .brand-icon-container > div > img {
     display: flex;
     justify-content: center;
     flex-direction: row;
   }
-  .brandiconcontainer .brandicon {
+  .brand-icon-container .brand-icon {
     width: 5%;
   }
   .line-container {
