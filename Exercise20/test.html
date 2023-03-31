@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<style>
+.color-pick {
+  width:100px;
+    height:100px;
+    overflow: hidden;
+    border-radius:100%;
+}
+input[type='color'] {
+    width:100%;
+    height:100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001A;
+    transform: scale(1.5);
+}
+</style>
+<body>
+
+<h1>Show a Color Picker</h1>
+
+<form action="/action_page.php">
+<div class="colorpicker"
+ ></div>
+ <div class="color-pick">
+   <input type="color" value="#ff00ff" />
+ </div>
+ <div class="color-pick">
+   <input type="color" value="red" />
+ </div>
+ <div class="color-pick">
+   <input type="color" value="#ff00ff" />
+ </div>
+ <div class="color-pick">
+   <input type="color" value="#ff00ff" />
+ </div>
+ <div class="color-pick">
+   <input type="color" value="#ff00ff" />
+ </div>
+  <input type="submit">
+</form>
+
+<p><b>Note:</b> type="color" is not supported in Internet Explorer 11 or Safari 9.1 (or earlier).</p>
+   
+</body>
+</html>
+
+
+// If there are no cards in local storage, create some default cards
+   
+    // Loop through the cards array and create a card for each object  //  if (cards.length <= 1) {
+      //   cards = [
+      //     {title: "Card 1",date:"Mar 26,2011",imageUrl: "images/demo.jpeg",textContent: "This is the content of card 1"},
+      //     {title: "Card 1",date:"Mar 26,2011",imageUrl: "images/demo.jpeg",textContent: "This is the content of card 1"},
+      //     {title: "Card 1",date:"Mar 26,2011",imageUrl: "images/demo.jpeg",textContent: "This is the content of card 1"},
+      //     {title: "Card 1",date:"Mar 26,2011",imageUrl: "images/demo.jpeg",textContent: "This is the content of card 1"},
+      //   ];
+      //   localStorage.setItem("cards", JSON.stringify(cards));
+      // }
+
+
+      console.log("hiiivhvvgv");
+      const cardLinks = document.querySelectorAll(".cardLink");
+    for (let i = 0; i < cardLinks.length; i++) {
+      cardLinks[i].addEventListener('click', function(event) {
+        event.preventDefault();
+        const card = this.querySelector('.card');
+        const title = card.querySelector('.notes-title').textContent;
+        const date = card.querySelector('.notes-date').textContent;
+        const imgContainer = card.querySelector('.image-container');
+        const image = imgContainer.querySelector('img').src;
+        const cardContent = card.querySelector('.card-content').textContent;
+        const cardData = {
+          color:"blue",
+          image: image,
+          title: title,
+          date:date,
+          textContent: cardContent 
+        };
+        
+        sessionStorage.setItem('cardData', JSON.stringify(cardData));
+       window.location.href = '/notesDetail.html';
+      });
+    }
+    
+    const storedCard = sessionStorage.getItem('cardData');
+    if (storedCard) {
+      const parsedCard = JSON.parse(storedCard);
+      document.getElementById('note-image').src = parsedCard.image;
+      document.getElementById('note-title').textContent = parsedCard.title;
+      document.getElementById('note-date').textContent = parsedCard.date;
+      document.getElementById('note-description').textContent = parsedCard.content;
+      document.getElementById('title1').value=parsedCard.title;
+      document.getElementById('textcontent1').value=parsedCard.content;
+    }

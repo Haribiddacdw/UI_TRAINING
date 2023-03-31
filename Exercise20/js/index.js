@@ -14,7 +14,10 @@ function onLoad() {
   hideLoadMoreButton();
   displayNotes();
 }
-
+function overlayOn(){
+  console.log("hiii");
+  document.getElementById("overlay").style.display = "block";
+}
 /***
  * added event listener to form submit button
  * when button is clicked it will validate the form and submit that form
@@ -174,7 +177,7 @@ function submitCard(form) {
   localStorage.setItem("listOfNotes", JSON.stringify(newNotes));
   console.log(localStorage.getItem("listOfNotes"));
   $("#onLoadElement").css("display", "none");
-  hideLoadBox();
+  hideLoadBox()
 }
 
 /***
@@ -234,11 +237,11 @@ function selectedColor(color) {
  * @return null
  */
 function hideLoadBox() {
-  if (localStorage.getItem("listOfNotes").length > 0) {
-    $(".onLoadElement").css("display", "none");
-  } else {
+  if (localStorage.getItem("listOfNotes").length == 0) {
     $(".onLoadElement").css("display", "block");
-    $("#deleteButton").css("display", "none");
+  } else {
+    $(".onLoadElement").css("display", "none");
+    $("#deleteButton").css("display", "block");
   }
 }
 
@@ -252,20 +255,21 @@ function hideLoadMoreButton() {
  * This function will helps to show the delete box container
  * @return null
  */
-function openDeleteBox() {
-  var x = document.getElementById("deleteAllBox");
+function openDeleteBox(){
+
+  var x = document.getElementById("blurdiv");
   if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
 }
 /***
  * This function will helps to close the delete box container
  * @return null
  */
 function closeDeleteBox() {
-  var x = document.getElementById("deleteAllBox");
+  var x = document.getElementById("blurdiv");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
@@ -290,6 +294,7 @@ function hideForm() {
  * @return null
  */
 function deleteAllNotes() {
+  
   const removeElements = document.querySelectorAll(
     "#cards-container,#deleteAllBox,#deleteButton,#loadMoreButton"
   );
@@ -299,6 +304,13 @@ function deleteAllNotes() {
 
   const loadIcon = document.getElementById("onLoadElement");
   loadIcon.style.display = "block";
+
+  var x = document.getElementById("blurdiv");
+  if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
   localStorage.clear();
   sessionStorage.clear();
 }

@@ -136,7 +136,7 @@ function submitCard2(form){
 
 function openDeleteNote(){
 
-    var x = document.getElementById("deleteAllBox");
+    var x = document.getElementById("blurdiv");
     if (x.style.display === "none") {
         x.style.display = "block";
       } else {

@@ -27,7 +27,7 @@
      <!-- HEADER -->
     <header class="header">
       <p class="page-title">Pocket Notes</p>
-      <div>
+      <div class="optionbutton">
         <button
           class="button button-D"
           onclick="openDeleteBox()"
@@ -96,30 +96,36 @@
       <div class="cards-container" id="cards-container"></div>
     </section>
 
-     <!-- DELETE BOX CONTAINER-->
-    <div class="deleteAllBox" id="deleteAllBox">
-      <div class="deleteAll" id="deleteAll">
-        <div class="close-box">
-          <p class="form-des">CONFIRM DELETE</p>
-          <i class="fa-regular fa-x" onclick="closeDeleteBox()"></i>
-        </div>
-        <div class="confrim">
-          <p class="confirm-message">Are you Sure Want to delete all notes ?</p>
-          <button class="button-DeleteAll" onclick="deleteAllNotes()">
-            YES,DELETE
-          </button>
-        </div>
-      </div>
-    </div>
+     
+    
     <!-- LOAD ICON -->
     <div class="onLoadElement" id="onLoadElement">
-      <img src="./images/cube.png" alt="cube" width="80%" />
+      <img src="./images/cube.png" alt="cube" width="20%" />
       <p>Notes you add appear here</p>
     </div>
   
     <button class="button-LM" id="loadMoreButton">LOAD MORE</button>
     <!-- JS LINKS -->
+    <!-- DELETE BOX CONTAINER-->
+    <div class="blurdiv" id="blurdiv">
+      <div class="deleteAllBox" id="deleteAllBox">
+        <div class="deleteAll" id="deleteAll">
+          <div class="close-box">
+            <p class="form-des">CONFIRM DELETE</p>
+            <i class="fa-regular fa-x" onclick="closeDeleteBox()"></i>
+          </div>
+          <div class="confrim">
+            <p class="confirm-message">Are you Sure Want to delete all notes ?</p>
+            <button class="button-DeleteAll" onclick="deleteAllNotes()">
+              YES,DELETE
+            </button>
+          </div>
+        </div>
+      </div>
+     </div>
+     
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="./js/index.js"></script>
+
   </body>
 </html>
