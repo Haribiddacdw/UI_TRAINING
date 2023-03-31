@@ -1,0 +1,117 @@
+//variables & functions
+@import "variable";
+
+//base & layout
+@import "base";
+
+//colors
+
+//components
+@import "components/_header";
+@import "components/_card";
+@import "components/_brandicons";
+@import "components/_tagline";
+@import "components/_line";
+@import "components/_footer";
+
+//responsive styling for mobile view 
+@media only screen and (max-width: 767px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 40%;
+  }
+  .title .email-Icon{
+       margin: 0% 27% 0% 0%;
+  }
+  .name {
+    p {
+      color: $color_1;
+      font-size: 75px;
+      font-weight: 500;
+      text-align: center;
+      margin: 0%;
+      &:nth-child(2) {
+        color: $color_1;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        margin: 7% 0% 0% 0%;
+      }
+    }
+  }
+  .email-Icon {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    p {
+      color: $color_1;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+  .card-box {
+    display: flex;
+    flex-direction: column;
+    margin: 22% 2.5% 17% 2.5%;
+    .card-img {
+      width: 100%;
+    }
+  }
+
+  .showoff {
+    color: $color_1;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 7%;
+  }
+  .brand-icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: space-around;
+    margin-bottom: 180px;
+    > div {
+      display: flex;
+      flex-basis: 100px;
+      flex-grow: 0;
+      justify-content: center;
+      flex-direction: column;
+      > img {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+      }
+    }
+    .brand-icon {
+      width: 5%;
+    }
+  }
+
+  .line-container {
+    display: flex;
+    text-align: center;
+    width: 48%;
+    .short-line {
+      margin-left: 3px;
+    }
+    .large-line {
+      margin-left: 12px;
+    }
+  }
+
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0px 60px 0px;
+  }
+}

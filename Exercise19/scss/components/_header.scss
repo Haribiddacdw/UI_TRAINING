@@ -1,0 +1,43 @@
+//style for name and email text
+.title {
+  display: flex;
+  flex-direction: column;
+
+  .email-Icon {
+    display: flex;
+    align-self: end;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    margin-right: 10%;
+
+    p {
+      color: $color_1;
+      font-size: 28px;
+      font-weight: 600;
+    }
+  }
+}
+
+.name {
+  p {
+    color: $color_1;
+    font-size: 167px;
+    text-align: center;
+    margin: 0%;
+    &:nth-child(2) {
+      color: $color_1;
+      font-size: 60px;
+      text-align: center;
+      margin: 0% 0% 8%;
+    }
+  }
+  .first-name{
+    font-weight: 400;
+  }
+  .bold-text {
+    font-weight: 700;
+  }
+  .sub-text {
+    color: $color_2;
+  }
+}

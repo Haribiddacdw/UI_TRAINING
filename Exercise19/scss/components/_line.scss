@@ -1,0 +1,16 @@
+//style for line 
+.line-container {
+  text-align: center;
+  margin: 0% 14% 6% 15%;
+  > hr {
+    display: inline-block;
+  }
+  .short-line {
+    width: 34px;
+    margin-left: -20px;
+  }
+  .large-line {
+    margin-left: 38px;
+    width: 221px;
+  }
+}
