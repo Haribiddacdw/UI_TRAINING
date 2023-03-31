@@ -24,7 +24,10 @@ fetch("store/posters.json")
   });
 
 
-
+/**
+ *This method used to play the video on click
+ * @returns null
+ */
 function playVid() { 
   document.getElementById("video").play(); 
   document.getElementById("video").setAttribute("controls",""); 
@@ -36,10 +39,8 @@ function playVid() {
   }
 }
 
-
-
 /**
- * It will createComment Container
+ *This method used to createComment Container
  * @returns Div object
  */
 function createComment(temp) {
@@ -67,7 +68,7 @@ function createComment(temp) {
   return div;
 }
 /**
- * It will create Image Container
+ * This method used to create Image Container
  * @returns Div object
  */
 function createImageCards(temp) {
@@ -80,7 +81,7 @@ function createImageCards(temp) {
   return div;
 }
 /**
- * It will create Video Element
+ * This method used to  create Video Element
  * @returns null
  */
 function createVideoElement(data) {
@@ -95,7 +96,7 @@ function createVideoElement(data) {
   document.getElementById("video-div").appendChild(videoDiv);
 }
 /**
- * It will create Movie Name Element
+ * This method used to create Movie Name Element
  * @returns null
  */
 function createMovieNameElement(data) {
@@ -108,7 +109,7 @@ function createMovieNameElement(data) {
     .insertAdjacentElement("afterend", movieName);
 }
 /**
- * It will create Movie  Description Element
+ * This method used to create Movie  Description Element
  * @returns null
  */
 function createMovieDescriptionElement(data) {
