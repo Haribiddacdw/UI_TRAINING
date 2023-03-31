@@ -1,0 +1,60 @@
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+/* Header Style */
+header {
+  background-color: rgb(55, 30, 99);
+  color: rgb(255, 255, 255);
+  padding: 35px 35px;
+  font-size: 24px;
+  font-weight: 300;
+}
+/* Card Style */
+.card {
+  display: flex;
+  width: 26%;
+  flex-direction: row;
+  gap: 20px;
+  background-color: rgb(82, 102, 175);
+  padding: 14px 87px 18px 15px;
+}
+/* Card Details Style */
+.card-details {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+}
+.user-name {
+  font-size: 19px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  padding-top: 14px;
+}
+.user-email {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  padding-top: 3px;
+}
+#list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 15px;
+  margin: 3.9% 5.4%;
+}
+/*  Logo Style */
+.img-container {
+  width: 73px;
+  height: 73px;
+}
+.img-container img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
