@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head section -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blender Movies</title>
+    <!-- External Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <p>Blender Movies</p>
+          <div class="profile">
+            <p class="user-name">Steffy Jerry</p>
+            <img src="/images/reviewers/profile-icon.jpeg" class="profile-img" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- section -->
+    <section class="blender">
+      <!--  Movie Section-->
+      <div class="mov-container">
+        <div class="movie-section" id="movie-section">
+          <div id="video-div" class="video-div">
+            <img src="./images/play-button.png" class="play-icon" id="play" onclick="playVid()"/>
+          </div>
+          <div class="h_line"></div>
+          <div class="comments-section">
+            <p class="commentss">Comments</p>
+            <div id="comments"></div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <!-- Upcoming Project Section-->
+        <div class="upcoming-movies-section">
+          <p>Upcoming Projects</p>
+          <div class="upcoming-movies" id="upcoming-movies"></div>
+        </div>
+      </div>
+      <div class="chatbot"><i class="fa-solid fa-message messageicon"></i></div>
+    </section>
+    <!--  Footer Section-->
+    <footer class="footer-section">
+      <p><i class="fa-regular fa-copyright copyright"></i>Copyrights 2022</p>
+      <p class="footer-name">Blender Movies</p>
+    </footer>
+    <!-- JS Link -->
+    <script src="/js/index.js"></script>
+  </body>
+</html>
